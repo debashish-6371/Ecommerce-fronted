@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get to know Forma: thoughtful essentials, made with care and designed for everyday life.">
+  <title>About — Forma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Complimentary shipping on orders over $100</div>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Forma home">forma<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+      <span class="visually-hidden">Toggle navigation</span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="components.html">Components</a>
+    </nav>
+    <button class="bag-link" type="button" aria-label="Shopping bag, 0 items">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+      <span>Bag <span class="bag-count" aria-live="polite">(0)</span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="page-intro about-intro">
+      <p class="eyebrow">A little more thoughtful</p>
+      <h1>Less, but<br><em>so much better.</em></h1>
+      <p>We make the pieces you reach for every day: considered in every detail, easy to live in, and made to last.</p>
+    </section>
+    <section class="about-feature">
+      <div class="about-image" role="img" aria-label="Friends sharing a relaxed day together"></div>
+      <div class="about-copy">
+        <p class="eyebrow">Our point of view</p>
+        <h2>Good design<br>feels like <em>enough.</em></h2>
+        <p>Forma began with a simple idea: everyday things deserve a little more thought. We choose versatile shapes, tactile materials, and the kind of quality that earns a permanent place in your wardrobe.</p>
+        <p>We work in small, considered collections rather than chasing the next thing. Fewer pieces, better made, and designed to work together season after season.</p>
+      </div>
+    </section>
+    <section class="values section-wrap">
+      <p class="eyebrow">What matters to us</p>
+      <h2>Made with intention.</h2>
+      <div class="value-grid">
+        <article><span>01</span><h3>Thoughtful materials</h3><p>We look for natural and recycled fibers chosen for comfort, longevity, and a lighter footprint.</p></article>
+        <article><span>02</span><h3>Wear on repeat</h3><p>Timeless silhouettes and useful details make getting dressed feel refreshingly simple.</p></article>
+        <article><span>03</span><h3>Buy a little better</h3><p>We focus on pieces worth keeping, caring for, and passing along when their time with you is done.</p></article>
+      </div>
+      <a class="button button-dark" href="components.html">Explore the collection <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark" href="index.html" aria-label="Forma home">forma<span>.</span></a>
+    <p>Thoughtful things for everyday.</p>
+    <div class="footer-links"><a href="about.html">About</a><a href="components.html">Components</a><a href="index.html#collections">Shipping & returns</a></div>
+    <span class="copyright">© 2025 Forma Studio</span>
+  </footer>
+  <p class="site-message" role="status" aria-live="polite"></p>
+  <script src="site.js" defer></script>
+</body>
+</html>

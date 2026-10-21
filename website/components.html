@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore considered everyday clothing and accessories from Forma.">
+  <title>Components — Forma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Complimentary shipping on orders over $100</div>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Forma home">forma<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+      <span class="visually-hidden">Toggle navigation</span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="components.html" aria-current="page">Components</a>
+    </nav>
+    <button class="bag-link" type="button" aria-label="Shopping bag, 0 items">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+      <span>Bag <span class="bag-count" aria-live="polite">(0)</span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="catalog-intro">
+      <p class="eyebrow">The considered collection</p>
+      <h1>Everyday, <em>elevated.</em></h1>
+      <p>Easy pieces, made to move with you.</p>
+    </section>
+    <section class="catalog section-wrap" aria-labelledby="catalog-title">
+      <div class="catalog-toolbar">
+        <h2 id="catalog-title" class="visually-hidden">Shop all products</h2>
+        <p><span data-product-count>4</span> pieces</p>
+        <div class="filter-controls" role="group" aria-label="Filter products">
+          <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-button" data-filter="accessories" aria-pressed="false">Accessories</button>
+          <button type="button" class="filter-button" data-filter="clothing" aria-pressed="false">Clothing</button>
+          <button type="button" class="filter-button" data-filter="shoes" aria-pressed="false">Shoes</button>
+        </div>
+      </div>
+      <div class="product-grid catalog-grid">
+        <article class="product-card" data-category="accessories">
+          <a class="product-image product-one" href="index.html#new-arrivals" aria-label="The Everyday Tote details"><span class="badge">Bestseller</span><span class="quick-view">View item <span aria-hidden="true">↗</span></span></a>
+          <div class="product-info"><div><h3>The Everyday Tote</h3><p>Natural / Organic cotton</p></div><span>$48</span></div>
+          <button class="add-to-bag" type="button" data-product="The Everyday Tote" data-price="48">Add to bag</button>
+        </article>
+        <article class="product-card" data-category="clothing">
+          <a class="product-image product-two" href="index.html#new-arrivals" aria-label="The Weekend Shirt details"><span class="quick-view">View item <span aria-hidden="true">↗</span></span></a>
+          <div class="product-info"><div><h3>The Weekend Shirt</h3><p>Oat / European linen</p></div><span>$96</span></div>
+          <button class="add-to-bag" type="button" data-product="The Weekend Shirt" data-price="96">Add to bag</button>
+        </article>
+        <article class="product-card" data-category="shoes">
+          <a class="product-image product-three" href="index.html#new-arrivals" aria-label="The Form Sneaker details"><span class="badge badge-new">Just in</span><span class="quick-view">View item <span aria-hidden="true">↗</span></span></a>
+          <div class="product-info"><div><h3>The Form Sneaker</h3><p>Chalk / Recycled leather</p></div><span>$120</span></div>
+          <button class="add-to-bag" type="button" data-product="The Form Sneaker" data-price="120">Add to bag</button>
+        </article>
+        <article class="product-card" data-category="clothing">
+          <a class="product-image product-four" href="index.html#new-arrivals" aria-label="The Everyday Knit details"><span class="quick-view">View item <span aria-hidden="true">↗</span></span></a>
+          <div class="product-info"><div><h3>The Everyday Knit</h3><p>Stone / Organic cotton</p></div><span>$110</span></div>
+          <button class="add-to-bag" type="button" data-product="The Everyday Knit" data-price="110">Add to bag</button>
+        </article>
+      </div>
+      <p class="empty-products" hidden>No pieces in this category just yet.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark" href="index.html" aria-label="Forma home">forma<span>.</span></a>
+    <p>Thoughtful things for everyday.</p>
+    <div class="footer-links"><a href="about.html">About</a><a href="components.html">Components</a><a href="index.html#collections">Shipping & returns</a></div>
+    <span class="copyright">© 2025 Forma Studio</span>
+  </footer>
+  <p class="site-message" role="status" aria-live="polite"></p>
+  <script src="site.js" defer></script>
+</body>
+</html>
